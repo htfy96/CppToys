@@ -1,3 +1,10 @@
+/* ***************************************
+ * Another application of noexcept as
+ * exception indication
+ *
+ * Author: lz96@foxmail.com
+ * June 4th, 2015
+ * ***************************************/
 #include <iostream>
 #include <algorithm>
 #include <stdexcept>
