@@ -123,9 +123,10 @@ placeholder2 _2;
 
 int main()
 {
-        auto l = 2 + _1 + _2;
-        auto lnew = _1 + 2 + 3 + _2;
-        auto l3 = (_1 + 2) < _2;
+// I don't like #define, but compatibility f**ks me every day
+#define l (2 + _1 + _2) 
+#define lnew  (_1 + 2 + 3 + _2)
+#define l3  ((_1 + 2) < _2)
         std::cout<< l(2,-43) << std::endl;
         std::cout << lnew(3,4) << std::endl;
         std::cout << l3(0,1) << " "<< l3(-2, 1) << std::endl;
